@@ -2,7 +2,7 @@
 ## Table of Contents
 1. [Description] (#description)
 2. [Installation] (#installation)
-3. [Usage] (#usage#)
+3. [Usage] (#usage)
 4. [File Structure] (#file-structure)
 5. [License] (#license)
 
