@@ -13,14 +13,13 @@ The Hangman Game is a Python project that simulates the classic Hangman word-gue
 To install the game:
 
 1. Clone the following repository: 
+
 '''bash 
 git clone https://github.com/RiyaLdn/hangman500.git
 
-2. Navigate to the repository:
-"cd python_dir"
+2. Navigate to the repository: "cd python_dir"
 
-3. Open the game:
-4. "python milestone_5.py"
+3. Open the game: "python milestone_5.py"
 
 ## Usage instructions 
 Follow the on-screen instructions to guess letters and play the Hangman game. The game will provide feedback on correct and incorrect guesses, and it will inform you if you win or lose.
