@@ -14,12 +14,12 @@ To install the game:
 
 1. Clone the following repository: 
 
-'''bash 
-git clone https://github.com/RiyaLdn/hangman500.git
+`bash`
+`git clone https://github.com/RiyaLdn/hangman500.git`
 
-2. Navigate to the repository: "cd python_dir"
+2. Navigate to the repository: `cd python_dir`
 
-3. Open the game: "python milestone_5.py"
+3. Open the game: `python milestone_5.py`
 
 ## Usage  
 Follow the on-screen instructions to guess letters and play the Hangman game. The game will provide feedback on correct and incorrect guesses, and it will inform you if you win or lose.
