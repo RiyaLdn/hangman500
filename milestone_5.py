@@ -1,7 +1,7 @@
 import random
 
 class Hangman:
-    def __init__(self, word_list, num_lives=10):
+    def __init__(self, word_list, num_lives=5):
         self.word_list = word_list
         self.num_lives = num_lives
         self.word = self._get_random_word()
@@ -9,10 +9,13 @@ class Hangman:
         self.num_letters = len(set(self.word))
         self.list_of_guesses = []
 
+        print(f"The mystery word has {len(self.word)} characters")
+        print(" ".join(self.word_guessed))
+
     def _get_random_word(self):
         return random.choice(self.word_list)
 
-    def check_guess(self, guess):
+    def check_letter(self, guess):
         guess = guess.lower()
 
         if guess in self.word.lower():
@@ -20,42 +23,39 @@ class Hangman:
 
             for i, letter in enumerate(self.word):
                 if letter.lower() == guess:
-                    self.word_guessed[i] = letter 
+                    self.word_guessed[i] = letter.upper()  
                     self.num_letters -= 1
         else:
             self.num_lives -= 1
-            print(f"Sorry, '{guess}' is not in the word.")
-            print(f"You have {self.num_lives} lives left.")
+            
+        print(" ".join(self.word_guessed))  
+        
 
-    def ask_for_input(self):
+    def ask_letter(self):
         while True:
             guess = input("Guess a letter: ")
             if len(guess) != 1 or not guess.isalpha():
-                print("Invalid letter. Please, enter a single alphabetical character.")
+                print(" Please enter just one character.")
             elif guess in self.list_of_guesses:
-                print("You already tried that letter!")
+                print(f" '{guess}' was already tried!")
             else:
-                self.check_guess(guess)
+                self.check_letter(guess)
                 self.list_of_guesses.append(guess)  
                 break
 
-def play_game(word_list):
-    num_lives = 10
+def play_game(word_list, num_lives=5):
     game = Hangman(word_list, num_lives)
 
     while True:
-        print("Word Guessed:", ''.join(game.word_guessed))
-        print("Remaining Unique Letters:", game.num_letters)
-        game.ask_for_input()
+        game.ask_letter()  
 
         if game.num_lives == 0:
-            print("You lost!")
+            print(f"You lost! The word was {game.word}")
             break
         elif game.num_letters == 0 or ''.join(game.word_guessed) == game.word:
-            print("Congratulations. You won the game!")
+            print("Congratulations. You won!")
             break
 
-
 if __name__ == "__main__":
-    words_to_guess = ["Strawberry", "Cherry", "Pineapple", "Mango", "Orange"]  
-    play_game(words_to_guess)
+    word_list = ["Strawberry", "Cherry", "Pineapple", "Mango", "Orange"]  
+    play_game(word_list)
