@@ -1,13 +1,30 @@
-Hangman
-Table of Contents:
+# Hangman
+## Table of Contents
+1. [Description] (#description)
+2. [Installation] (#installation)
+3. [Usage] (#usage#)
+4. [File Structure] (#file-structure)
+5. [License] (#license)
 
-Description:
-Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts. This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. ( What it does, the aim of the project, and what you learned )
+## Description
+The Hangman Game is a Python project that simulates the classic Hangman word-guessing game. The project aims to provide an interactive and entertaining game where the player can guess letters to reveal a hidden word. The project also demonstrates the use of classes, functions, and game logic in Python.
 
-Installation instructions: 
+## Installation instructions 
+To install the game:
 
-Usage instructions: 
+1. Clone the following repository: 
+'''bash 
+git clone https://github.com/RiyaLdn/hangman500.git
 
-File structure of the project: 
+2. Navigate to the repository:
+"cd python_dir"
 
-License information
+3. Open the game:
+4. "python milestone_5.py"
+
+## Usage instructions 
+Follow the on-screen instructions to guess letters and play the Hangman game. The game will provide feedback on correct and incorrect guesses, and it will inform you if you win or lose.
+
+## File structure
+
+## License information
