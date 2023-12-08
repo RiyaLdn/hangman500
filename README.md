@@ -7,7 +7,7 @@
 5. [License] (#license)
 
 ## Description
-The Hangman Game is a Python project that simulates the classic Hangman word-guessing game. The project aims to provide an interactive and entertaining game where the player can guess letters to reveal a hidden word. The project also demonstrates the use of classes, functions, and game logic in Python.
+The Hangman Game is a Python project where you can play the classic game of Hangman! This project aims to provide an interactive and entertaining gaming experience where the player must guess letters to reveal a hidden word. The project demonstrates the use of classes, functions, and game logic in Python.
 
 ## Installation  
 To install the game:
